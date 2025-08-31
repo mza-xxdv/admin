@@ -4181,7 +4181,7 @@ end)
 
 PrefixBox:GetPropertyChangedSignal("Text"):Connect(function()
 	prefix = PrefixBox.Text
-	Cmdbar.PlaceholderText = "Command Bar ("..prefix..");"
+	Cmdbar.PlaceholderText = "Command Bar ("..prefix..")"
 	updatesaves()
 end)
 
@@ -5594,7 +5594,7 @@ Players.LocalPlayer.Chatted:Connect(function()
 	end
 end)
 
-Cmdbar.PlaceholderText = "Command Bar ("..prefix..");"
+Cmdbar.PlaceholderText = "Command Bar ("..prefix..")"
 Cmdbar:GetPropertyChangedSignal("Text"):Connect(function()
 	if Cmdbar:IsFocused() then
 		IndexContents(Cmdbar.Text,true,true)
